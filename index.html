@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,21 @@
   <link rel="stylesheet" href="./assets/css/styles.css"> 
 </head>
 <body>
+  <!-- Header -->
+  <header class="header-flexbox">
+    <img class="logo" src="./assets/images/logo.svg" alt="FX Checker">
+    <div class="header-right-flexbox">
+       <!-- JS: updates currency count from API -->
+      <span class="header-info-item"><span id="currency-count">55</span> Currencies</span>
+      <span class="header-info-item">EOD</span>
+      <span class="header-info-item">ECB data</span>
+    </div>
+  </header>
 
+
+
+  
+   
 <!--
   This file holds the static written content from the design so you don't have to
   retype it. It is intentionally unstructured — building the HTML is your job.
@@ -153,6 +168,6 @@ Clear all
 <!-- Log empty state -->
 No conversions logged yet
 Every conversion is recorded here automatically when you tap Log conversion. Your log is private to this session and this browser.
-
+  
 </body>
 </html>
