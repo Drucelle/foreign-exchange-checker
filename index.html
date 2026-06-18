@@ -161,6 +161,59 @@
         </section>
       </dialog>
 
+      <!-- Tabs -->
+      <section class="tab-containers">
+        <nav class="tabs" aria-label="Content Sections">
+          <div role="tablist">
+            <button
+              id="tab-1"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-1"
+            >
+              History
+            </button>
+            <button
+              id="tab-2"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-2"
+            >
+              Compare
+            </button>
+            <button
+              id="tab-3"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-3"
+            >
+              Favorites <span class="badge" id="favorites-count">0</span>
+            </button>
+            <button
+              id="tab-4"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-4"
+            >
+              Log <span class="badge" id="log-count">0</span>
+            </button>
+          </div>
+        </nav>
+        <!-- Tab panels -->
+        <div id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+          <p>Content for tab-1</p>
+        </div>
+        <div id="panel-2" role="tabpanel" aria-labelledby="tab-2">
+          <p>Content for tab-2</p>
+        </div>
+        <div id="panel-3" role="tabpanel" aria-labelledby="tab-3">
+          <p>Content for tab-3</p>
+        </div>
+        <div id="panel-4" role="tabpanel" aria-labelledby="tab-4">
+          <p>Content for tab-4</p>
+        </div>
+      </section>
+
       <!--
 
   This file holds the static written content from the design so you don't have to
@@ -226,7 +279,7 @@
       Log
       <!-- Dynamic: number of logged conversions (badge) -->
 
-      <!-- Tab panel: History (default tab) -->
+      <!-- Tab panel: History (default tab) --> Done June-18
 
       Open
       <!-- Dynamic: opening rate for the selected range -->
