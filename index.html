@@ -59,6 +59,7 @@
             class="swap-button"
             aria-label="Swap currencies"
           >
+            <!-- Swap button -->
             <img
               class="vertical-exchange-arrows"
               src="./assets/images/icon-exchange-vertical.svg"
@@ -68,7 +69,9 @@
           <!-- Receive group -->
           <div class="receive-group">
             <label>Receive</label>
-            <output for="send-amount" id="calculated-receive-amount">1,000</output>
+            <output for="send-amount" id="calculated-receive-amount"
+              >1,000</output
+            >
             <button type="button" class="receive-currency-button">
               <img
                 class="flag"
@@ -103,6 +106,60 @@
           </div>
         </div>
       </section>
+
+      <!-- Currency Picker Dialog-->
+      <dialog class="currency-picker" id="currency-picker">
+        <label for="currency-search">Search currencies</label>
+        <input
+          type="search"
+          class="currency-picker-search"
+          id="currency-search"
+          name="q"
+          placeholder="Search currencies..."
+        />
+
+        <!-- Popular currencies -->
+        <section class="popular-currencies">
+          <h2>Popular <span id="popular-count">3</span></h2>
+          <ul class="currency-list">
+            <li class="currency-code-item">
+              <img
+                class="flag"
+                src="./assets/images/flags/us.webp"
+                alt="US flag in a circular shape"
+              />
+              <span class="currency-code">USD</span>
+              <span class="currency-name">US Dollar</span>
+              <img
+                class="checked"
+                src="./assets/images/icon-check.svg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </section>
+
+        <!-- Other currencies -->
+        <section class="other-currencies">
+          <h2>Other currencies <span id="other-count">52</span></h2>
+          <ul class="currency-list">
+            <li class="currency-code-item">
+              <img
+                class="flag"
+                src="./assets/images/flags/ua.webp"
+                alt="UAE flag in a circular shape"
+              />
+              <span class="currency-code">AED</span>
+              <span class="currency-name">UAE Dirham</span>
+              <img
+                class="checked"
+                src="./assets/images/icon-check.svg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </section>
+      </dialog>
 
       <!--
 
@@ -149,7 +206,7 @@
       <!-- Favorite toggle for the active pair — reads "Favorite" when unpinned, "Favorited" when pinned -->
       Favorite Favorited Log conversion
 
-      <!-- Currency picker — popover opened from either currency button -->
+      <!-- Currency picker — popover opened from either currency button HTML Done 18-June!!-->
 
       Search currencies... Popular
       <!-- Dynamic: number of popular currencies -->
@@ -160,6 +217,7 @@
       <!-- Dynamic: every other currency, each row: flag, code, name -->
 
       <!-- Dynamic: while searching, the list filters to the currencies matching the query -->
+      HTMl Done 18-June
 
       <!-- Tabs — collapse into a dropdown on mobile -->
 
