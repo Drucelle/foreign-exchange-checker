@@ -259,13 +259,44 @@
         </div>
 
         <div id="panel-2" role="tabpanel" aria-labelledby="tab-2">
-          <p>Content for tab-2</p>
-        </div>
-        <div id="panel-3" role="tabpanel" aria-labelledby="tab-3">
-          <p>Content for tab-3</p>
-        </div>
-        <div id="panel-4" role="tabpanel" aria-labelledby="tab-4">
-          <p>Content for tab-4</p>
+          <section class="compare-panel-card">
+            <h2>
+              Multi-currency
+              <output for="send-amount" id="compare-amount">1,000</output>
+              from
+              <span id="compare-base-currency">USD</span>
+            </h2>
+            <p><span id="compare-pairs-count">8</span> pairs</p>
+
+            <ul class="compare-list">
+              <li class="compare-item">
+                <img
+                  class="flag"
+                  src="./assets/images/flags/gb.webp"
+                  alt="GB flag in a circular shape"
+                />
+                <span class="currency-code">GBP</span>
+                <span class="currency-name">British Pound</span>
+                <span class="rate-compare-item">736.65 @ 0.7366</span>
+                <button type="button" class="pin-button" aria-label="Pin pair">
+                  <img
+                    class="star-icon"
+                    src="./assets/images/icon-star.svg"
+                    alt=""
+                  />
+                </button>
+              </li>
+            </ul>
+
+            <!-- Compare empty state -->
+            <div class="compare-empty-state" hidden>
+              <h3>No comparison available</h3>
+              <p>
+                Enter an amount in Send above to see what your money is worth in
+                other currencies.
+              </p>
+            </div>
+          </section>
         </div>
       </section>
 
