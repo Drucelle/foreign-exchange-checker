@@ -1,4 +1,4 @@
-<<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -342,6 +342,52 @@
               <p>
                 Pin a pair to track its rate here. Tap the star icon on any
                 conversion or comparison row
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- Tab panel-4: Log (conversion history, saved in the browser) -->
+        <div id="panel-4" role="tabpanel" aria-labelledby="tab-4">
+          <section class="log-card">
+            <h2>
+              Conversion log
+              <!-- Dynamic: number of logged conversions, e.g. "8 logged" -->
+              <span id="log-count">8</span> logged
+            </h2>
+
+            <button type="button" class="clear-all-button">Clear all</button>
+            <!-- Dynamic: one row per logged conversion, each: relative time (e.g. "20m", "1h", "13 May"), pair, send amount, receive amount, and a delete button -->
+            <div class="log-entries">
+              <ul class="log-list">
+                <li class="log-items">
+                  <time datetime="2026-06-19T14:30:00">20m</time>
+
+                  <!-- log of pair -->
+                  <span class="currency-code">USD</span
+                  ><span class="pair-arrow" aria-hidden="true"
+                    ><img
+                      src="./assets/images/icon-arrow-right.svg"
+                      alt="" /></span
+                  ><span class="currency-code">EUR</span>
+
+                  <span class="send-amount">1,000</span>
+                  <span class="receive-amount">853.02</span>
+                  <!-- Delete button bin -->
+                  <button type="button" aria-label="Delete log">
+                    <img src="./assets/images/icon-delete.svg" alt="" />
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Log empty state -->
+            <div class="log-empty-state" hidden>
+              <h3>No conversions logged yet</h3>
+              <p>
+                Every conversion is recorded here automatically when you tap Log
+                conversion. Your log is private to this session and this
+                browser.
               </p>
             </div>
           </section>
