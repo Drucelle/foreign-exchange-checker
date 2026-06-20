@@ -298,6 +298,54 @@
             </div>
           </section>
         </div>
+
+        <!-- Tab panel 3: Favorites (pinned pairs, saved in the browser) -->
+        <div id="panel-3" role="tabpanel" aria-labelledby="tab-3">
+          <section class="favorites-card">
+            <h2>
+              Pinned pairs
+              <!-- Dynamic: number of pinned pairs, e.g. "10 favorites" -->
+              <span id="favorites-count">10</span> favorites
+            </h2>
+            <!-- Dynamic: one row per pinned pair, each: pair (e.g. "USD → EUR"), live rate, 24h change %, and a filled star to unpin -->
+            <ul class="favorites-list">
+              <li class="favorites-item">
+                <span class="currency-code">USD</span
+                ><span class="pair-arrow" aria-hidden="true"
+                  ><img
+                    src="./assets/images/icon-arrow-right.svg"
+                    alt="" /></span
+                ><span class="currency-code">EUR</span>
+                <!-- Dynamic: percentage change over the range (▲/▼; positive green, negative red) -->
+
+                <div class="favorite-stat">
+                  <span class="ticker-change positive">▲ +0.16%</span>
+                </div>
+
+                <span class="favorite-rate">0.8530</span>
+                <button
+                  type="button"
+                  class="favorite-button"
+                  aria-label="Unpin pair"
+                >
+                  <img
+                    class="star-icon"
+                    src="./assets/images/icon-star.svg"
+                    alt=""
+                  />
+                </button>
+              </li>
+            </ul>
+            <!-- Favorites empty state -->
+            <div class="favorites-empty-state" hidden>
+              <h3>No pinned pairs yet</h3>
+              <p>
+                Pin a pair to track its rate here. Tap the star icon on any
+                conversion or comparison row
+              </p>
+            </div>
+          </section>
+        </div>
       </section>
 
     </main>
