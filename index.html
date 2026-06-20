@@ -27,6 +27,7 @@
     <!-- Main -->
     <main>
       <section class="ticker">
+        <h2 class="visually-hidden">Live markets</h2>
         <!-- Live Markets label -->
         <span class="live-markets-label">
           <span class="ticker-bullet" aria-hidden="true"></span>
@@ -169,6 +170,7 @@
 
       <!-- Tabs -->
       <section class="tab-containers">
+        <h2 class="visually-hidden">Currency comparison tools</h2>
         <nav class="tabs" aria-label="Content Sections">
           <div role="tablist">
             <button
@@ -193,7 +195,7 @@
               aria-selected="false"
               aria-controls="panel-3"
             >
-              Favorites <span class="badge" id="favorites-count">0</span>
+              Favorites <span class="badge" id="favorites-badge-count">0</span>
             </button>
             <button
               id="tab-4"
@@ -201,7 +203,7 @@
               aria-selected="false"
               aria-controls="panel-4"
             >
-              Log <span class="badge" id="log-count">0</span>
+              Log <span class="badge" id="log-badge-count">0</span>
             </button>
           </div>
         </nav>
@@ -209,6 +211,7 @@
         <!-- Tab panels -->
         <div id="panel-1" role="tabpanel" aria-labelledby="tab-1">
           <section class="history-panel">
+            <h3 class="visually-hidden">Rate history</h3>
             <!-- Dynamic: opening rate for the selected range -->
             <dl class="stats-row">
               <div class="stat">
@@ -254,7 +257,7 @@
 
             <!-- History empty / error state -->
             <div class="chart-error-state" hidden>
-              <h2>No chart data available</h2>
+              <h3>No chart data available</h3>
               <p>
                 We couldn't load rate history for
                 <span id="error-pair">USD/EUR</span> right now. This usually
