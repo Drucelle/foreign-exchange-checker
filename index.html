@@ -17,7 +17,9 @@
     <div class="header-right-flexbox">
        <!-- JS: updates currency count from API -->
       <span class="header-info-item"><span id="currency-count">55</span> Currencies</span>
+      <span class="header-info-separator" aria-hidden="true"></span>
       <span class="header-info-item">EOD</span>
+      <span class="header-info-separator" aria-hidden="true"></span>
       <span class="header-info-item">ECB data</span>
     </div>
   </header>
@@ -26,7 +28,11 @@
     <main>
       <section class="ticker">
         <!-- Live Markets label -->
-        <span class="live-markets-label">live markets</span>
+        <span class="live-markets-label">
+          <span class="ticker-bullet" aria-hidden="true"></span>
+          Live markets</span
+        >
+
         <!-- Dynamic: Infinite scrolling list of currency pairs, each with its rate and 24h change (▲ up / ▼ down) -->
         <ul class="ticker-list">
           <li class="ticker-item">
