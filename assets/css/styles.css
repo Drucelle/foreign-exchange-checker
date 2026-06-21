@@ -133,3 +133,19 @@
   --radius-24: 1.5rem;
   --radius-full: 62.4375rem;
 }
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/jetbrains-mono/jetbrains-mono-variable.ttf")
+    format("truetype");
+  font-weight: 100 800;
+  font-style: normal;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--neutral-900);
+  color: var(--neutral-50);
+}
