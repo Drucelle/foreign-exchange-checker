@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Neutral */
+  --neutral-900: hsl(0, 0%, 4%);
+  --neutral-700: hsl(240, 4%, 9%);
+  --neutral-600: hsl(240, 3%, 13%);
+  --neutral-500: hsl(0, 0%, 18%);
+  --neutral-400: hsl(0, 0%, 24%);
+  --neutral-300: hsl(240, 1, 27%);
+  --neutral-200: hsl(0, 0%, 62%);
+  --neutral-100: hsl(0, 0%, 78%);
+  --neutral-50: hsl(0, 0%, 100%);
+
+  /* Lime */
+  --lime-500: hsl(71, 92%, 60%);
+  --lime-800: hsl(73, 100%, 10%);
+
+  /* Green */
+  --green-500: hsl(104, 96%, 47%);
+
+  /* Red */
+  --red-500: hsl(0, 100%, 63%);
+
+  /* Typography:font weight */
+  --type-weight-regular: 400;
+  --type-weight-medium: 500;
+  --type-weight-bold: 700;
+
+  /* Typography: Type preset 1 */
+  --type-preset-1-bold-size: 2.5rem;
+  --type-preset-1-bold-weight: var(--type-weight-bold);
+  --type-preset-1-bold-line-height: 100%;
+  --type-preset-1-bold-letter-spacing: -0.03125rem;
+
+  /* Typography: Type preset 1 (Tablet) */
+  --type-preset-1-tablet-bold-size: 2rem;
+  --type-preset-1-tablet-bold-weight: var(--type-weight-bold);
+  --type-preset-1-tablet-bold-line-height: 100%;
+  --type-preset-1-tablet-bold-letter-spacing: -0.03125rem;
+
+  /* Typography: Type Preset 2 Regular */
+  --type-preset-2-regular-size: 1.25rem;
+  --type-preset-2-regular-weight: var(--type-weight-regular);
+  --type-preset-2-regular-line-height: 120%;
+  --type-preset-2-regular-letter-spacing: -0.03125rem;
+
+  /* Typography: Type Preset 2 Bold */
+  --type-preset-2-bold-size: 1.25rem;
+  --type-preset-2-bold-weight: var(--type-weight-bold);
+  --type-preset-2-bold-line-height: 140%;
+  --type-preset-2-bold-letter-spacing: -0.03125rem;
+
+  /* Typography: Type Preset 3 Regular */
+  --type-preset-3-regular-size: 1rem;
+  --type-preset-3-regular-weight: var(--type-weight-regular);
+  --type-preset-3-regular-line-height: 120%;
+  --type-preset-3-regular-letter-spacing: 0.625rem;
+
+  /* Typography: Type Preset 3 Medium */
+  --type-preset-3-medium-size: 1rem;
+  --type-preset-3-medium-weight: var(--type-weight-medium);
+  --type-preset-3-medium-line-height: 120%;
+  --type-preset-3-medium-letter-spacing: 0.625rem;
+
+  /* Typography: Type Preset 3 Bold */
+  --type-preset-3-bold-size: 1rem;
+  --type-preset-3-bold-weight: var(--type-weight-bold);
+  --type-preset-3-bold-line-height: 110%;
+  --type-preset-3-bold-letter-spacing: 0.625rem;
+
+  /* Typography: Type Preset 4 Regular */
+  --type-preset-4-regular-size: 0.875rem;
+  --type-preset-4-regular-weight: var(--type-weight-regular);
+  --type-preset-4-regular-line-height: 120%;
+  --type-preset-4-regular-letter-spacing: 0.625rem;
+
+  /* Typography: Type Preset 5 Regular */
+  --type-preset-5-regular-size: 0.75rem;
+  --type-preset-5-regular-weight: var(--type-weight-regular);
+  --type-preset-5-regular-line-height: 120%;
+  --type-preset-5-regular-letter-spacing: 0.03125rem;
+
+  /* Typography: Type Preset 5 Medium */
+  --type-preset-5-medium-size: 0.75rem;
+  --type-preset-5-medium-weight: var(--type-weight-medium);
+  --type-preset-5-medium-line-height: 130%;
+  --type-preset-5-medium-letter-spacing: 0.03125rem;
+
+  /* Typography: Type Preset 6 Regular */
+  --type-preset-6-regular-size: 0.625rem;
+  --type-preset-6-regular-weight: var(--type-weight-regular);
+  --type-preset-6-regular-line-height: 100%;
+  --type-preset-6-regular-letter-spacing: 0;
+
+  /* Spacing */
+  --spacing-0: 0;
+  --spacing-025: 0.125rem;
+  --spacing-050: 0.25rem;
+  --spacing-075: 0.375rem;
+  --spacing-100: 0.5rem;
+  --spacing-125: 0.625rem;
+  --spacing-150: 0.75rem;
+  --spacing-200: 1.25rem;
+  --spacing-250: 1.5rem;
+  --spacing-300: 2rem;
+  --spacing-400: 2.5rem;
+  --spacing-500: 3rem;
+  --spacing-600: 4rem;
+  --spacing-1000: 5rem;
+  --spacing-1200: 6rem;
+  --spacing-1400: 7rem;
+  --spacing-1600: 8rem;
+  --spacing-1800: 8.75rem;
+
+  /* Border Radius */
+  --radius-0: 0;
+  --radius-4: 0.25rem;
+  --radius-6: 0.375rem;
+  --radius-8: 0.5rem;
+  --radius-10: 0.375rem;
+  --radius-12: 0.5rem;
+  --radius-14: 0.625rem;
+  --radius-16: 0.75rem;
+  --radius-18: 1rem;
+  --radius-20: 1.25rem;
+  --radius-24: 1.5rem;
+  --radius-full: 62.4375rem;
+}
