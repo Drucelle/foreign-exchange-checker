@@ -146,6 +146,16 @@ body {
   font-family: "JetBrains Mono", monospace;
   min-height: 100vh;
   min-height: 100dvh;
+  min-width: 20rem;
   background-color: var(--neutral-900);
   color: var(--neutral-50);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.25rem;
+    padding: 1rem;
 }
